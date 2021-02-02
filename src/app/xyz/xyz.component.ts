@@ -4,23 +4,18 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-xyz',
   template: `
     <h1>XYZ</h1>
-    <p>
-      xyz works!
-    </p>
+    <p>xyz works!</p>
   `,
   styles: [
     `
-    h1{
-      color: blue;
-    }
-    `
-  ]
+      h1 {
+        color: blue;
+      }
+    `,
+  ],
 })
 export class XyzComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
