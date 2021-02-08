@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     <div class="container container-fluid">
       <div class="row">
         <div class="col">
-          <app-bform></app-bform>
+          <!-- <app-bform></app-bform> -->
         </div>
       </div>
     </div>
