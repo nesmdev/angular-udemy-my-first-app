@@ -3,18 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-test',
   template: `
-    <p>
-      test works!
-    </p>
+    <div class="row ">
+      <div class="col-md-12">
+        <p>test works!</p>
+        <app-tienda></app-tienda>
+      </div>
+    </div>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class TestComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

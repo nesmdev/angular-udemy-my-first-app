@@ -21,6 +21,13 @@ import { NavbarComponent } from './header/navbar/navbar.component';
 import { Navbar2Component } from './header/navbar2/navbar2.component';
 import { RecipeItem2Component } from './recipes/recipe-list/recipe-item2/recipe-item2.component';
 import { RecipeItem3Component } from './recipes/recipe-list/recipe-item3/recipe-item3.component';
+import { ParentComponent } from './test/parent/parent.component';
+import { VendedorComponent } from './test/parent/vendedor/vendedor.component';
+import { ClienteComponent } from './test/parent/cliente/cliente.component';
+import { MissionControlComponent } from './ng/via-srv/mission-control/mission-control.component';
+import { AstronautComponent } from './ng/via-srv/astronaut/astronaut.component';
+import { AngularComponent } from './ng/angular/angular.component';
+import { ReversePipe } from './shared/pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -42,10 +49,20 @@ import { RecipeItem3Component } from './recipes/recipe-list/recipe-item3/recipe-
     Navbar2Component,
     RecipeItem2Component,
     RecipeItem3Component,
+    ParentComponent,
+    VendedorComponent,
+    ClienteComponent,
+    MissionControlComponent,
+    AstronautComponent,
+    AngularComponent,
+    ReversePipe,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [MainComponent],
-  // bootstrap: [TestComponent],
+  // bootstrap: [MainComponent],
+  bootstrap: [
+    // AngularComponent,
+    TestComponent,
+  ],
 })
 export class AppModule {}
