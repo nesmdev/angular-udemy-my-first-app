@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
     <div class="row ">
       <div class="col-md-12">
         <p>test works!</p>
-        <app-tienda></app-tienda>
+        <!-- <app-tienda></app-tienda> -->
+        <app-local-reference></app-local-reference>
       </div>
     </div>
   `,

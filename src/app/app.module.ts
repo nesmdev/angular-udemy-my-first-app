@@ -28,6 +28,19 @@ import { MissionControlComponent } from './ng/via-srv/mission-control/mission-co
 import { AstronautComponent } from './ng/via-srv/astronaut/astronaut.component';
 import { AngularComponent } from './ng/angular/angular.component';
 import { ReversePipe } from './shared/pipes/reverse.pipe';
+import { LocalReferenceComponent } from './test/local-reference/local-reference.component';
+import { LvChildComponent } from './examples/component-interaction/local-variable/lv-parent/lv-child/lv-child.component';
+import { LvParentComponent } from './examples/component-interaction/local-variable/lv-parent/lv-parent.component';
+import { VchParentComponent } from './examples/component-interaction/view-child/vch-parent/vch-parent.component';
+import { VchChildComponent } from './examples/component-interaction/view-child/vch-parent/vch-child/vch-child.component';
+import { IbChildComponent } from './examples/component-interaction/input-binding/ib-parent/ib-child/ib-child.component';
+import { IbParentComponent } from './examples/component-interaction/input-binding/ib-parent/ib-parent.component';
+import { EbChildComponent } from './examples/component-interaction/event-binding/eb-parent/eb-child/eb-child.component';
+import { EbParentComponent } from './examples/component-interaction/event-binding/eb-parent/eb-parent.component';
+import { ExamplesComponent } from './examples/examples.component';
+import { SsFirstChildComponent } from './examples/component-interaction/services-subscription/ss-parent/ss-first-child/ss-first-child.component';
+import { SsSecondChildComponent } from './examples/component-interaction/services-subscription/ss-parent/ss-second-child/ss-second-child.component';
+import { SsParentComponent } from './examples/component-interaction/services-subscription/ss-parent/ss-parent.component';
 
 @NgModule({
   declarations: [
@@ -56,13 +69,27 @@ import { ReversePipe } from './shared/pipes/reverse.pipe';
     AstronautComponent,
     AngularComponent,
     ReversePipe,
+    LocalReferenceComponent,
+    LvChildComponent,
+    LvParentComponent,
+    VchParentComponent,
+    VchChildComponent,
+    IbChildComponent,
+    IbParentComponent,
+    EbChildComponent,
+    EbParentComponent,
+    ExamplesComponent,
+    SsFirstChildComponent,
+    SsSecondChildComponent,
+    SsParentComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
   // bootstrap: [MainComponent],
   bootstrap: [
     // AngularComponent,
-    TestComponent,
+    // TestComponent,
+    ExamplesComponent,
   ],
 })
 export class AppModule {}
